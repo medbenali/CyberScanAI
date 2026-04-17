@@ -16,7 +16,7 @@ CyberScanAI Server works perfect with any MCP clients.
 Screenshots
 ----
 
-![Screenshot](https://github.com/medbenali/CyberScanAI/blob/master/images/demo/demo.png)
+![Screenshot](https://github.com/medbenali/CyberScanAI/blob/main/images/demo/demo.png)
 
 
 ### Key Features 
@@ -151,7 +151,7 @@ $ CyberScanAI --transport http --host 192.168.1.1 --port 9090
 
 CyberScanAI supports different Network Analysis Tools
 
-![Tools](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/tools.png)
+![Tools](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tools.png)
 
 ### DNS Analysis Tools
 
@@ -197,7 +197,7 @@ Complete SIP traffic analysis :
 
 ## Prompts
 
-![Prompts](https://github.com/medbenali/CyberScanAI/blob/master/images/prompts/prompts.png)
+![Prompts](https://github.com/medbenali/CyberScanAI/blob/main/images/prompts/prompts.png)
 
 CyberScanAI provides specialised prompts to guide LLM analysis:
 
@@ -250,7 +250,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 ### DNS Analysis Tools
 
-![ToolsDNSAnalysis](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/dns.png)
+![ToolsDNSAnalysis](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/dns.png)
 
 ```json
 {
@@ -728,7 +728,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 ### DHCP Analysis Tools
 
-![ToolsDHCPAnalysis](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/dhcp.png)
+![ToolsDHCPAnalysis](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/dhcp.png)
 
 ```json
 {
@@ -895,7 +895,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 ### ICMP Analysis Module
 
-![ToolsICMPAnalysis](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/icmp.png)
+![ToolsICMPAnalysis](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/icmp.png)
 
 ```json
 {
@@ -1197,7 +1197,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 #### TCP Analysis Connection  
 
-![ToolsTCPAnalysisConnection](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/tcp_connection.png)
+![ToolsTCPAnalysisConnection](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tcp_connection.png)
 
 ```json
 {
@@ -1246,7 +1246,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 #### TCP Analysis Anomalies
 
-![ToolsTCPAnalysisAnomalies](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/tcp-anomalies.png)
+![ToolsTCPAnalysisAnomalies](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tcp-anomalies.png)
 
 ```json
 {
@@ -1303,7 +1303,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 #### TCP Analysis Retransmission
 
-![ToolsTCPAnalysisRetransmission](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/tcp-retransmission.png)
+![ToolsTCPAnalysisRetransmission](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tcp-retransmission.png)
 
 ```json
 {
@@ -1326,7 +1326,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 #### TCP Analysis Traffic
 
-![ToolsTCPAnalysisTraffic](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/tcp-traffic.png)
+![ToolsTCPAnalysisTraffic](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tcp-traffic.png)
 
 ```json
 
@@ -1335,7 +1335,7 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 
 ### SIP (VOIP) Analysis Tools
 
-![ToolsSIPAnalysis](https://github.com/medbenali/CyberScanAI/blob/master/images/tools/sip.png)
+![ToolsSIPAnalysis](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/sip.png)
 
 ```json
 {
