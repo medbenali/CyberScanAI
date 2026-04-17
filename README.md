@@ -1654,7 +1654,7 @@ Contact
 
 ##### Email : mohamed.benali@esprit.tn
 
-##### [LinkedIn](https://linkedin.com/in/medbenali) 
+##### LinkedIn : [LinkedIn](https://linkedin.com/in/medbenali) 
 
 
 
