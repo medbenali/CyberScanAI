@@ -11,7 +11,6 @@ CyberScanAI is an open source AI Agent Tool for Penetration Testing and Network 
 
 CyberScanAI is a MCP (Model Context Protocol) Server connects LLMs to tools and prompts for intelligent AI analyzing Networks.
 
-CyberScanAI Server works perfect with any MCP clients.
 
 Screenshots
 ----
