@@ -2,10 +2,10 @@
 
 
 <p align="center">
-<img src = "https://github.com/medbenali/CyberScanAI/blob/master/images/logo/CyberScanAI.png" alt="CyberScanAI logo" width="300"/>
+<img src = "https://github.com/medbenali/CyberScanAI/blob/main/images/logo/CyberScanAI.png" alt="CyberScanAI logo" width="300"/>
 </p>
 
-[![Python 3](https://img.shields.io/badge/python-2.6|2.7-yellow.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/License-GPL%20v3-red.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![Python 3](https://img.shields.io/badge/python-3-green.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/License-GPL%20v3-red.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 CyberScanAI is an open source AI Agent Tool for Penetration Testing and Network Forensics.
 
