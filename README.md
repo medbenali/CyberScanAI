@@ -42,6 +42,8 @@ Operating Systems Supported
 Installation
 ----
 
+You can install CyberScanAI with [Pip](https://pypi.org/project/cyberscanai)
+
 
 ```bash
 $ pip install cyberscanai
