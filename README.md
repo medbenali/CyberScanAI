@@ -5,7 +5,10 @@
 <img src = "https://github.com/medbenali/CyberScanAI/blob/main/images/logo/CyberScanAI.png" alt="CyberScanAI logo" width="300"/>
 </p>
 
-[![Python 3](https://img.shields.io/badge/python-3-green.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/License-GPL%20v3-red.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![Python 3](https://img.shields.io/badge/python-3-green.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-GPL%20v3-red.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![PyPI - Version](https://img.shields.io/pypi/v/cyberscanai.svg)](https://pypi.org/project/cyberscanai)
+
 
 CyberScanAI is an open source AI Agent Tool for Penetration Testing and Network Forensics.
 
@@ -39,20 +42,10 @@ Operating Systems Supported
 Installation
 ----
 
-CyberScanAI requires installation of **fastmcp** and **scapy**.
 
 ```bash
-$ pip install fastmcp
+$ pip install cyberscanai
 ```
-
-```bash
-$ pip install scapy
-```
-You can download CyberScanAI by cloning the [Git](https://github.com/medbenali/CyberScanAI) repository:
-
-    git clone https://github.com/medbenali/CyberScanAI.git
-    cd CyberScanAI/
-    python CyberScanAI.py -v
 
 CyberScanAI works out of the box with [Python](http://www.python.org/download/) version **3.1.x**.
 
@@ -60,32 +53,27 @@ CyberScanAI works out of the box with [Python](http://www.python.org/download/) 
 
 [CyberScanAI](https://github.com/medbenali/CyberScanAI) connecting LLMs to tools and prompts and data for intelligent Network Analysis. 
 
-Make sure you have CyberScanAI in your machine:
+You can test the installation CyberScanAI in your machine:
 
 ```bash
-$ git clone https://github.com/medbenali/CyberScanAI.git
-```
-
-You can test the installation firing up CyberScanAI iteratively. These are some useful functions:
-
-```bash
-$ CyberScanAI -h 
+$ cyberscanai -h 
 ```
 ---
 
+
 ## CyberScanAI MCP Server
 
-Start CyberScanAI as a stateless  MCP Server :
+Start CyberScanAI as a stateless MCP Server :
 
-CyberScanAI by default the transport is stdio and load all modules
+CyberScanAI by default the transport is stdio and load all modules.
 
 ```bash
-$ CyberScanAI 
+$ cyberscanai 
 ```
 CyberScanAI CLI usage : 
 
 ```bash
-$ CyberScanAI [--modules MODULES] [--transport {stdio,http}] [--host HOST] [--port PORT]
+$ cyberscanai [--modules MODULES] [--transport {stdio,http}] [--host HOST] [--port PORT]
 ```
 
 ### Modules
@@ -93,37 +81,37 @@ $ CyberScanAI [--modules MODULES] [--transport {stdio,http}] [--host HOST] [--po
 ### All Modules (by default)
 
 ```bash
-$ CyberScanAI --modules dns,dhcp,icmp,tcp,sip
+$ cyberscanai --modules dns,dhcp,icmp,tcp,sip
 ```
 
 ### DNS Analysis Module
 
 ```bash
-$ CyberScanAI --modules dns
+$ cyberscanai --modules dns
 ```
 
 ### DHCP Analysis Module
 
 ```bash
-$ CyberScanAI --modules dhcp
+$ cyberscanai --modules dhcp
 ```
 
 ### ICMP Analysis Module
 
 ```bash
-$ CyberScanAI --modules icmp
+$ cyberscanai --modules icmp
 ```
 
 ### TCP Analysis Module
 
 ```bash
-$ CyberScanAI --modules tcp
+$ cyberscanai --modules tcp
 ```
 
 ### SIP (VOIP) Analysis Module
 
 ```bash
-$ CyberScanAI --modules sip
+$ cyberscanai --modules sip
 ```
 
 ### Transport
@@ -131,24 +119,24 @@ $ CyberScanAI --modules sip
 ### stdio (by default)
 
 ```bash
-$ CyberScanAI 
+$ cyberscanai 
 ```
 
 ### HTTP Transport 
 
 ```bash
-$ CyberScanAI --transport http
+$ cyberscanai --transport http
 ```
 
 ### HTTP Transport with custom host and port
 
 ```bash
-$ CyberScanAI --transport http --host 192.168.1.1 --port 9090
+$ cyberscanai --transport http --host 192.168.1.1 --port 9090
 ```
 
 ## Tools
 
-CyberScanAI supports different Network Analysis Tools
+CyberScanAI supports different Network Analysis Tools.
 
 ![Tools](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tools.png)
 
@@ -196,9 +184,10 @@ Complete SIP traffic analysis :
 
 ## Prompts
 
+CyberScanAI provides specialised prompts to guide LLM analysis.
+
 ![Prompts](https://github.com/medbenali/CyberScanAI/blob/main/images/prompts/prompts.png)
 
-CyberScanAI provides specialised prompts to guide LLM analysis:
 
 ### DNS Prompts
 
@@ -244,7 +233,7 @@ Run the **CyberScanAI Client** with MCP Inspector
 
 ```bash
 npm install -g @modelcontextprotocol/inspector
-npx @modelcontextprotocol/inspector python CyberScanAI.py
+npx @modelcontextprotocol/inspector cyberscanai
 ```
 
 ### DNS Analysis Tools
@@ -1328,7 +1317,35 @@ npx @modelcontextprotocol/inspector python CyberScanAI.py
 ![ToolsTCPAnalysisTraffic](https://github.com/medbenali/CyberScanAI/blob/main/images/tools/tcp-traffic.png)
 
 ```json
-
+{
+  "file": "PCAP_Files/tcp-traffic.pcap",
+  "analysis_timestamp": "2026-04-23T09:58:35.223370",
+  "server": "10.3.30.1:1048:any",
+  "client_to_server": {
+    "packet_count": 0,
+    "byte_count": 0,
+    "syn_count": 0,
+    "rst_count": 0,
+    "fin_count": 0,
+    "data_packets": 0,
+    "retransmissions": 0
+  },
+  "server_to_client": {
+    "packet_count": 0,
+    "byte_count": 0,
+    "syn_count": 0,
+    "rst_count": 0,
+    "fin_count": 0,
+    "data_packets": 0,
+    "retransmissions": 0
+  },
+  "analysis": {
+    "asymmetry_ratio": 0,
+    "primary_rst_source": "balanced",
+    "data_flow_direction": "server_heavy",
+    "interpretation": "Balanced RST distribution."
+  }
+}
 ```
 
 
